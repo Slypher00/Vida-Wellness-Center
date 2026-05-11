@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen Wellness Center Login</title>
+    <link rel="stylesheet" href="login styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Evergreen Wellness Center</h1>
+    </header>
+    <main>
+      <form method="POST">  <!-- add action atribute later for where to send it to-->
+        <h2>Client Login</h2>
+        <fieldset>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            placeholder="name@example.com"
+            type="email"
+            name="email"
+            autocapitalize="none"
+            aria-required autocomplete="email"
+          ><br>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            placeholder="Password"
+            type="password"
+            name="password"
+            aria-required autocomplete="current-password"
+          >
+        </fieldset>
+        <button type="submit" id="btn-login" data-user-type="client">Log In</button><br>
+        <a id="forgot-password" href="#forgot-password">Forgot password?</a>
+        <div id="new-acc">
+          <p>New to our center? <a href="create-account.html">Create your account here!</a></p>
+        </div>
+        <div id="staff-login">
+          <p><a href="#staff-login">Staff Login</a></p>
+        </div>
+      </form>
+    </main>
+  </body>

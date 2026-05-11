@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="create-account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Evergreen Wellness Center</h1>
+    </header>
+    <main>
+      <form method="POST">
+        <h2>Create Account</h2>
+        <fieldset>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            placeholder="name@example.com"
+            type="email"
+            name="email"
+            autocapitalize="none">
+          <label for="fname">Legal First Name</label>
+          <input
+            id="fname"
+            placeholder="John"
+            type="text"
+            name="fname"
+            autocapitalize="none">
+          <label for="lname">Legal Last Name</label>
+          <input
+            id="lname"
+            placeholder="Doe"
+            type="text"
+            name="lname"
+            autocapitalize="none">
+          <label for="pname">Preferred Name (optional)</label>
+          <input
+            id="pname"
+            type="text"
+            name="pname"
+            autocapitalize="none">
+          <label for="dob">Date Of Birth</label>
+          <input
+            id="dob"
+            type="date"
+            name="dob"
+            autocapitalize="none">
+          <legend>Gender</legend>
+          <div>
+            <label for="male">Male</label>
+            <input
+              id="male"
+              type="radio"
+              name="gender"
+              value="male">
+          </div>
+          <div>
+            <label for="female">Female</label>
+            <input
+              id="female"
+              type="radio"
+              name="gender"
+              value="female">
+          </div>
+          <button id="gender-btn" type="button">More options</button>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            placeholder="password"
+            type="password"
+            name="password"
+            autocapitalize="none">
+          <label for="conferm-pass">Confirm Password</label>
+          <input
+            id="conferm-pass"
+            placeholder="password"
+            type="password"
+            name="conferm-pass"
+            autocapitalize="none">  
+        </fieldset>
+        <button type="submit" id="btn-crt">Create</button>
+        <p>Already have an account?<a href="Login-page.html"> Log in.</a></p>
+        </form>
+    </main>
+    <div id="gender-modal" class="hidden">
+      <div class="modal-content">
+        <h1>Select Your Gender Identity</h1>
+        <ul id="gender-id">
+          <li>
+            <input
+              type="checkbox"
+              id="afab"
+              name="afab"
+              value="afab">
+            <label for="afab">Assigned female at birth</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="amab"
+              name="amab"
+              value="amab">
+            <label for="amab">Assigned male at birth</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="cf"
+              name="cf"
+              value="cf">
+            <label for="cf">Cisgender woman</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="cm"
+              name="cm"
+              value="cm">
+            <label for="cm">Cisgender man</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="tf"
+              name="tf"
+              value="tf">
+            <label for="tf">Transgender woman</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="tm"
+              name="tm"
+              value="tm">
+            <label for="tm">Transgender man</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="nb"
+              name="nb"
+              value="nb">
+            <label for="nb">Non-binary</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="gf"
+              name="gf"
+              value="gf">
+            <label for="gf">Genderfluid</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="ag"
+              name="ag"
+              value="ag">
+            <label for="ag">Genderqueer</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="is"
+              name="is"
+              value="is">
+            <label for="is">Intersex</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="na"
+              name="na"
+              value="na">
+            <label for="na">Prefer not to say</label>
+          </li>
+        </ul>
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit" id="submit-btn">Submit</button>
+      </div>
+    </div>
+    <script src="creat-account.js"></script>
+  </body>
