@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <h1>Vida</h1>  <!-- change to logo picture -->
+      <h1>Vida Wellness Center</h1>
     </header>
     <main>
       <form method="POST">
@@ -23,20 +23,26 @@
             type="email"
             name="email"
             autocapitalize="none">
-          <label for="fname">Legal First Name</label>
-          <input
-            id="fname"
-            placeholder="John"
-            type="text"
-            name="fname"
-            autocapitalize="none">
-          <label for="lname">Legal Last Name</label>
-          <input
-            id="lname"
-            placeholder="Doe"
-            type="text"
-            name="lname"
-            autocapitalize="none">
+          <div id="name">
+            <div id="form-group">
+              <label for="fname">Legal First Name</label>
+              <input
+                id="fname"
+                placeholder="John"
+                type="text"
+                name="fname"
+                autocapitalize="none">
+            </div>
+            <div id="form-group">
+              <label for="lname">Legal Last Name</label>
+              <input
+                id="lname"
+                placeholder="Doe"
+                type="text"
+                name="lname"
+                autocapitalize="none">
+            </div>
+          </div>
           <label for="pname">Preferred Name (optional)</label>
           <input
             id="pname"
@@ -49,22 +55,28 @@
             type="date"
             name="dob"
             autocapitalize="none">
-          <legend>Gender</legend>
-          <div>
-            <label for="male">Male</label>
-            <input
-              id="male"
-              type="radio"
-              name="gender"
-              value="male">
-          </div>
-          <div>
-            <label for="female">Female</label>
-            <input
-              id="female"
-              type="radio"
-              name="gender"
-              value="female">
+          <div id="gender">
+            <legend> Choose Gender Identity</legend>
+            <div>
+              <div class="gen-btn">
+                <input
+                  id="male"
+                  type="radio"
+                  name="gender"
+                  value="male">
+                <label for="male">Male</label>
+              </div>
+            </div>
+            <div>
+              <div class="gen-btn">
+                <input
+                  id="female"
+                  type="radio"
+                  name="gender"
+                  value="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
           </div>
           <button id="gender-btn" type="button">More options</button>
           <label for="password">Password</label>
@@ -91,92 +103,92 @@
         <h1>Select Your Gender Identity</h1>
         <ul id="gender-id">
           <li>
+            <label for="afab">Assigned female at birth</label>
             <input
               type="checkbox"
               id="afab"
               name="afab"
               value="afab">
-            <label for="afab">Assigned female at birth</label>
           </li>
           <li>
+            <label for="amab">Assigned male at birth</label>
             <input
               type="checkbox"
               id="amab"
               name="amab"
               value="amab">
-            <label for="amab">Assigned male at birth</label>
           </li>
           <li>
+            <label for="cf">Cisgender woman</label>
             <input
               type="checkbox"
               id="cf"
               name="cf"
               value="cf">
-            <label for="cf">Cisgender woman</label>
           </li>
           <li>
+            <label for="cm">Cisgender man</label>
             <input
               type="checkbox"
               id="cm"
               name="cm"
               value="cm">
-            <label for="cm">Cisgender man</label>
           </li>
           <li>
+            <label for="tf">Transgender woman</label>
             <input
               type="checkbox"
               id="tf"
               name="tf"
               value="tf">
-            <label for="tf">Transgender woman</label>
           </li>
           <li>
+            <label for="tm">Transgender man</label>
             <input
               type="checkbox"
               id="tm"
               name="tm"
               value="tm">
-            <label for="tm">Transgender man</label>
           </li>
           <li>
+            <label for="nb">Non-binary</label>
             <input
               type="checkbox"
               id="nb"
               name="nb"
               value="nb">
-            <label for="nb">Non-binary</label>
           </li>
           <li>
+            <label for="gf">Genderfluid</label>
             <input
               type="checkbox"
               id="gf"
               name="gf"
               value="gf">
-            <label for="gf">Genderfluid</label>
           </li>
           <li>
+            <label for="ag">Genderqueer</label>
             <input
               type="checkbox"
               id="ag"
               name="ag"
               value="ag">
-            <label for="ag">Genderqueer</label>
           </li>
           <li>
+            <label for="is">Intersex</label>
             <input
               type="checkbox"
               id="is"
               name="is"
               value="is">
-            <label for="is">Intersex</label>
           </li>
           <li>
+            <label for="na">Prefer not to say</label>
             <input
               type="checkbox"
               id="na"
               name="na"
               value="na">
-            <label for="na">Prefer not to say</label>
           </li>
         </ul>
         <button type="button" id="cancel-btn">Cancel</button>
